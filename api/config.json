@@ -4,6 +4,8 @@
 		"host": "localhost",
 		"db_name": "db_where",
 		"user": "user",
-		"password": "2209"
+		"password": "2209",
+		"port": "3306",
+		"socket": ""
 	}
 }

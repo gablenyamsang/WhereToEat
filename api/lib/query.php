@@ -7,7 +7,9 @@ class Query {
         $username = $db_config["user"];
         $password = $db_config["password"];
         $db_name = $db_config["db_name"];
-        $conn = new mysqli($servername, $username, $password, $db_name);
+        $port = $db_config["port"];
+        $socket = $db_config["socket"];
+        $conn = new mysqli($servername, $username, $password, $db_name, $port, $socket);
         $result = $conn->query($sql);
         $record_list = [];
         while($row = $result->fetch_assoc()) {
