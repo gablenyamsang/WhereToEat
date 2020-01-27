@@ -1,0 +1,9 @@
+{
+	"system_name": "Where to Eat",
+	"database": {
+		"host": "localhost",
+		"db_name": "db_where",
+		"user": "user",
+		"password": "2209"
+	}
+}
