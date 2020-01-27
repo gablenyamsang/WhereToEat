@@ -10,7 +10,6 @@ function list_restaurant() {
 
 function rand_restaurant() {
 	$.getJSON(config["api_path"]+"get_rand_restaurant.php", function(restaurant) {
-		$("#tb-body-selected-restaurant").empty();
-		$("#tb-body-selected-restaurant").append("<tr><td>"+restaurant["id"]+"</td><td>"+restaurant["name"]+"</td></tr>");
+		$("#selected-restaurant").html(restaurant["name"]);
     }); 
 }
