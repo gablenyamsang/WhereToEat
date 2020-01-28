@@ -1,10 +1,10 @@
 # WhereToEat
 
-# How to run test
+#-- How to run test
 
 git clone https://github.com/gablenyamsang/WhereToEat.git
 
-# Build PHP Host
+#-- Build PHP Host
 
 cd WhereToEat
 
@@ -27,7 +27,7 @@ docker build -t front:latest .
 docker run -d -p 8080:80 --name front --rm front:latest
 
 
-# Build MariaDB
+#-- Build MariaDB
 
 cd db_script
 
@@ -44,4 +44,4 @@ docker build -t mysql:latest .
 
 docker run -d -p 3306:3306 --name db_where --rm -e MYSQL_ROOT_PASSWORD=my-secret-pw mysql/mysql-server:latest
 
-docker exec -it db_where mysql -uroot -pmy-secret-pw -e "db_where.sql"
+docker exec -i db_where mysql -uroot -pmy-secret-pw mysql < db_where.sql
