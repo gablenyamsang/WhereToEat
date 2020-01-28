@@ -1,9 +1,9 @@
 # WhereToEat
-#How to run test
+# How to run test
 
 git clone https://github.com/gablenyamsang/WhereToEat.git
 
-#Build PHP Host
+# Build PHP Host
 cd WhereToEat
 docker pull paichayon/php5-alpine:latest
 
@@ -17,7 +17,7 @@ EOF
 docker build -t front:latest .
 docker run -d -p 8080:80 --name front --rm front:latest
 
-#Build MariaDB
+# Build MariaDB
 cd db_script
 docker pull mysql/mysql-server:latest
 
