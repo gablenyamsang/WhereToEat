@@ -63,7 +63,7 @@ docker build -t front:latest .
 docker run -d -p 8080:80 --name front --rm front:latest
 
 
-#-- Build MariaDB
+#-- Build Database
 
 cd /root/WhereToEat/db_script
 
