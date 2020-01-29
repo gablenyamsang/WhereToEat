@@ -13,7 +13,9 @@ cat <<EOF> config.json
   "host": "mydb",
   "db_name": "db_where",
   "user": "root",
-  "password": "my-secret-pw"
+  "password": "my-secret-pw",
+  "port": "3306
+  "socket": ""
  }
 }
 EOF
